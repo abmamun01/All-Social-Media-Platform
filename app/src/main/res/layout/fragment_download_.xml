@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Download_Fragment"
+    android:padding="10dp"
+    android:background="@color/white"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tiktok_downloader"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        app:cardBackgroundColor="#E6E6E6"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewd"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tiktokdownloader"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Download Tiktok "
+                android:textColor="@color/primary_text"
+                android:textSize="23sp"
+                app:layout_constraintStart_toEndOf="@+id/imageViewd"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/facebookDownloader"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:layout_below="@id/tiktok_downloader"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#E6E6E6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageVifew"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/facebo_downloader"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Download Facebook"
+                android:textColor="@color/primary_text"
+                android:textSize="23sp"
+                app:layout_constraintStart_toEndOf="@+id/imageVifew"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/youtube_downloader"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:layout_below="@id/facebookDownloader"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#EBEBEB">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageVifaew"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/youtuve_downloader"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Download Youtube"
+                android:textColor="@color/primary_text"
+                android:textSize="23sp"
+                app:layout_constraintStart_toEndOf="@+id/imageVifaew"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>
